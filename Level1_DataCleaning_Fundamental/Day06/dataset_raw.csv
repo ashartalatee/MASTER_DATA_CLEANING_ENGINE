@@ -1,0 +1,6 @@
+name,age,date_joined,price,gender,phone,active
+Alice,25,2023/01/05,1000,M,812345678,yes
+Bob,thirty,05-02-2023,Rp2000,Female,628123456789,no
+Charlie,40,2023-03-10,3000.5,Pria,0812-345-678,yes
+Diana,,2023-04-01,4000,F,8123456,no
+Evan,22,01/05/23,five thousand,Male,phone,yes

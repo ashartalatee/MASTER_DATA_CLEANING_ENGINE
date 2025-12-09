@@ -1,0 +1,8 @@
+Kolom & Tipe Data Saat Ini:
+name -> object
+age -> object
+date_joined -> object
+price -> object
+gender -> object
+phone -> object
+active -> object
