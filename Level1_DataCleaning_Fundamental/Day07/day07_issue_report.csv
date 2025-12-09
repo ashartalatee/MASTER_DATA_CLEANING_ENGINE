@@ -1,0 +1,9 @@
+Column,Type,Unique,Issues
+name,object,16,None
+age,float64,9,Missing values: 3; Duplicate values: 6
+gender,object,4,Duplicate values: 12; Possible typo/category inconsistency
+phone,object,15,Duplicate values: 1
+price,object,16,None
+date_joined,object,14,Duplicate values: 2
+city,object,4,Duplicate values: 12; Possible typo/category inconsistency
+email,object,16,None

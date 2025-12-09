@@ -1,0 +1,17 @@
+name,age,gender,phone,price,date_joined,city,email
+Aldi,25,M,81234567890,Rp120.000,2023-01-05,Jakarta,aldi@mail.com
+Rina,,Female,628123999111,125000,05/01/23,Bandung,rina@mail.com
+Budi,27,Male,0812-3456-7890,Rp 98.000,1-5-2023,Jakarta,budi_mail.com
+Sari,22,F,08 123 888 777,100.5,2023/01/05,Surabaya,sari@mail.com
+Dimas,28,M,62812abc7777,150000,2005-01-23,Bandung,dimas@mail
+Indah,21,Female,+62 812 3344 5566,Rp130k,2023.01.05,Jakarta,indah@mail.com
+Andi,24,Male,81233445566,140,01/05/23,Medan,andi_at_mail.com
+Lina,23,F,0812 7788 9999,125,2023-01-05,Jakarta,lina@mail
+Rudi,,M,628123112233,Rp 145.000,05.01.2023,Surabaya,rudi@mail.com
+Putri,20,Female,0812-0000-9999,135k,2023/5/1,Bandung,putri_mail.com
+Bayu,26,Male,81234567890,Rp.120000,2023-05-01,Jakarta,bayu@mail
+Melati,22,F,62812377x123,Rp 110.500,01/05/23,Medan,melati@mail.com
+Dewi,25,Female,08123344abcd,98k,2023/01/5,Surabaya,dewi@mail.com
+Reza,27,Male,62812 999 333,Rp150.000,5-1-2023,Jakarta,rezamail.com
+Fajar,,M,81233334444,100000,2023 01 05,Bandung,fajar@mail.com
+Hanif,23,Male,+62812-8888-1111,Rp 99.000,01-05-2023,Jakarta,hanif@mail
