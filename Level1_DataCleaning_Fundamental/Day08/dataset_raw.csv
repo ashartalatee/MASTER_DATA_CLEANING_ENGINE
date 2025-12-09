@@ -1,0 +1,15 @@
+name,age,gender,price,date_joined,phone,email
+Andi,23,M,150000,2023-03-12,81234567890,andi@example.com
+Budi,24,Male,175,12/03/23,628123456789,budi@example.com
+Cici,,F,200000,2023/03/10,0812-3456-1111,cici@mail.com
+Andi,23,M,150000,2023-03-12,81234567890,andi@example.com
+Dewi,22,Female,Rp180000,10-03-2023,628123987654,dewi@domain.id
+Eka,21,F,175000,2023-03-11,+62 812-9988-7777,eka@domain.id
+Fajar,twenty five,M,200,2023.03.09,0813 4455 8899,fajar@mail.com
+Gilang,27,M,,03/08/23,81298765432,gilang@mail.com
+Hana,26,F,190000,2023-03-08,81234560000,han@@mail.com
+Ivan,26,Male,180000,,81267899999,ivan@mail.com
+Joko,25,M,175000,2023/03/10,81234567888,joko@mail.com
+Cici,,F,200000,2023/03/10,0812-3456-1111,cici@mail.com
+Budi,24,M,175000,2023-03-12,8123456789,budi@example.com
+Lia,23,Female,175,2023-03-11,+62-812-5678-2222,lia@domain.id
