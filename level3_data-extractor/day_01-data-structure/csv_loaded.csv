@@ -1,0 +1,5 @@
+id,name,price,category
+1,Product A,12000.0,Food
+2,Product B,,Drink
+3,Product C,15000.0,
+4,Product A,12000.0,Food
