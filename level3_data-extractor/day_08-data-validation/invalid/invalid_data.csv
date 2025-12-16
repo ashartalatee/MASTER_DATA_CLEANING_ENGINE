@@ -1,0 +1,6 @@
+userId,id,title,body
+2.0,3,Post ketiga,
+2.0,4,,Isi tanpa judul
+,7,Post tanpa userId,Isi userId kosong
+3.0,5,Post kelima,Isi lengkap
+3.0,5,Post kelima duplikat,Isi duplikat ID

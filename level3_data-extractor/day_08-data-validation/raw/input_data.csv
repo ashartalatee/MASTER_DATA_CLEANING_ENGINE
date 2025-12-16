@@ -1,0 +1,10 @@
+userId,id,title,body
+1,1,Post pertama,Ini adalah isi post pertama
+1,2,Post kedua,Ini adalah isi post kedua
+2,3,Post ketiga,
+2,4,,Isi tanpa judul
+3,5,Post kelima,Isi lengkap
+3,5,Post kelima duplikat,Isi duplikat ID
+4,6,Post keenam,Isi lengkap
+,7,Post tanpa userId,Isi userId kosong
+5,8,Post kedelapan,Isi lengkap
