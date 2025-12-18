@@ -60,3 +60,33 @@ Hari ini fokus pada:
   "author": "Albert Einstein",
   "tags": ["change", "deep-thoughts", "thinking", "world"]
 }
+
+# Level 4 — Day 4: Cleaning Extracted Data
+
+## Tujuan
+- Membersihkan data hasil scraping dari Day 3
+- Menghapus duplicate, missing, dan data noise
+- Standarisasi format text, author, dan tags
+- Menyimpan output CSV siap dipakai pipeline
+
+## Script
+File: `extractor/day4_cleaning.py`
+
+### Langkah yang Dilakukan
+1. Import data dari Day 3 (`all_results`)
+2. Hapus duplicate berdasarkan field `text`
+3. Strip whitespace pada `text` dan `author`
+4. Standarisasi `tags` menjadi lowercase dan bersih
+5. Hapus data yang missing (`text` atau `author`)
+6. Simpan hasil akhir ke CSV: `output/quotes_cleaned.csv`
+
+### Output
+- CSV `quotes_cleaned.csv` berisi data bersih
+- Duplicate dan missing sudah dihapus
+- Tags seragam lowercase
+- Jumlah row: sesuai hasil terminal
+
+### Cara Jalankan
+```bash
+python extractor/day4_cleaning.py
+
