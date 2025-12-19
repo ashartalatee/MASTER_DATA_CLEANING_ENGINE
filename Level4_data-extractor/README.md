@@ -171,6 +171,79 @@ Semua data, baik dari web maupun API, distandarkan ke format:
 
  Muncul warning:
 
+ # Day 8 — Retry, Timeout & Circuit Breaker
+
+## Tujuan
+Meningkatkan extractor dari **“bisa jalan”** menjadi **“tahan error & layak produksi”**  
+dengan menerapkan pola dasar **resilient system**:
+
+- Retry otomatis
+- Timeout yang jelas
+- Circuit breaker (pengaman saat API rusak)
+
+---
+
+## Masalah Dunia Nyata yang Disimulasikan
+- API sering:
+  - SSL error
+  - Timeout
+  - Tidak stabil
+- Jika tidak diantisipasi:
+  - Script hang
+  - Pipeline mati
+  - Automation gagal total
+
+Day 8 mengajarkan:
+> **Error itu pasti. Sistem yang baik sudah siap sebelum error datang.**
+
+---
+
+## Konsep Teknis yang Diterapkan
+
+## Retry dengan Backoff
+- Request API dicoba beberapa kali
+- Jika gagal → tunggu → coba lagi
+- Waktu tunggu meningkat setiap percobaan
+
+Tujuan:
+- Tidak langsung menyerah
+- Tidak membanjiri server
+
+---
+
+## Timeout
+- Request dibatasi waktu (`timeout=5`)
+- Jika lewat batas → dianggap gagal
+
+Tujuan:
+- Script tidak freeze
+- Pipeline tetap mengalir
+
+---
+
+### Circuit Breaker (Versi Sederhana)
+- Jika API gagal berkali-kali:
+  - Sistem **berhenti mencoba**
+  - Source dianggap “mati sementara”
+- Pipeline tetap jalan tanpa API
+
+Tujuan:
+- Melindungi sistem utama
+- Fokus ke reliability, bukan ego script
+
+---
+
+## Flow Sistem
+
+1. Request API dengan retry & timeout
+2. Jika sukses → data diproses
+3. Jika gagal berulang:
+   - Circuit breaker aktif
+   - API dilewati
+4. Sistem tetap menghasilkan output CSV
+
+
+
 
 
 
