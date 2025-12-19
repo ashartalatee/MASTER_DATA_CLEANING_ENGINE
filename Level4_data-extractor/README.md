@@ -233,7 +233,43 @@ Tujuan:
    - API dilewati
 4. Sistem tetap menghasilkan output CSV
 
+# Day 9 — Data Validation & Schema Enforcement
 
+## Tujuan
+Membangun **QUALITY GATE** pada data hasil extraction agar:
+- Hanya data valid yang lolos
+- Data rusak / tidak sesuai schema **ditolak**
+- Pipeline stabil dan siap naik level (warehouse / AI / business system)
+
+Hari ini adalah **pemisah antara scraper dan Data Engineer**.
+
+---
+
+## Konsep Utama
+
+### Schema Enforcement
+Data **HARUS** mengikuti kontrak berikut:
+
+| Field   | Aturan Wajib                          |
+|--------|----------------------------------------|
+| text   | String, tidak kosong                   |
+| author | String, tidak kosong                   |
+| tags   | List                                  |
+| source | Hanya `web` atau `api`                 |
+
+Jika satu saja melanggar → **row ditolak**
+
+---
+
+### Validation Rule (Rule-Based)
+- Tidak pakai tebakan
+- Tidak pakai asumsi
+- Semua aturan eksplisit & konsisten
+
+---
+
+### Quality > Quantity
+> 20 data valid > 1.000 data sampah
 
 
 
