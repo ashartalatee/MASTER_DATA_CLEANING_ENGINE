@@ -271,6 +271,26 @@ Jika satu saja melanggar → **row ditolak**
 ### Quality > Quantity
 > 20 data valid > 1.000 data sampah
 
+# Day 10 — Final Extraction Pipeline  
+## Level 4: Data Extractor Advanced (COMPLETE)
 
+---
 
+## Tujuan Day 10
+Menyatukan seluruh proses **Level 4 (Day 3–Day 9)** menjadi **SATU PIPELINE UTUH**:
 
+> **One command → data siap pakai**
+
+Pipeline ini bukan sekadar script,
+melainkan **MESIN EKSTRAKSI DATA tahan error**.
+
+---
+
+## Masalah Dunia Nyata yang Diselesaikan
+
+- Data datang dari **banyak sumber**
+- API bisa error / SSL bermasalah
+- Web bisa berubah
+- Data mentah sering rusak
+
+ Solusi: **Pipeline modular, fault-tolerant, dan tervalidasi**
