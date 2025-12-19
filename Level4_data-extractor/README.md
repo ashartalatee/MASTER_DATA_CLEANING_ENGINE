@@ -90,3 +90,27 @@ File: `extractor/day4_cleaning.py`
 ```bash
 python extractor/day4_cleaning.py
 
+# Day 6 — Multi-Source Data Extraction & Cleaning Engine
+
+## Tujuan
+Membangun **pipeline data multi-source** yang:
+- Mengambil data dari **web scraping**
+- Menggabungkan dengan **CSV eksternal (opsional)**
+- Membersihkan & standarisasi data
+- Menghilangkan duplikasi
+- Menyimpan output bersih secara otomatis
+
+Pipeline ini **tidak crash** walau salah satu sumber data tidak tersedia.
+
+---
+
+## Konsep Utama (Level 4 Mindset)
+> **Sistem profesional harus tetap hidup walau dunia tidak ideal**
+
+- Sumber data bisa hilang
+- File bisa belum ada
+- Engine tetap jalan
+- Output tetap dihasilkan
+
+
+
