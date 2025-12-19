@@ -80,7 +80,6 @@ File: `extractor/day4_cleaning.py`
 - Jumlah row: sesuai hasil terminal
 
 ### Cara Jalankan
-```bash
 python extractor/day4_cleaning.py
 
 # Day 6 — Multi-Source Data Extraction & Cleaning Engine
@@ -95,7 +94,6 @@ Membangun **pipeline data multi-source** yang:
 
 Pipeline ini **tidak crash** walau salah satu sumber data tidak tersedia.
 
----
 
 ## Konsep Utama (Level 4 Mindset)
 > **Sistem profesional harus tetap hidup walau dunia tidak ideal**
