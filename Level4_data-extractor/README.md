@@ -52,14 +52,7 @@ Hari ini fokus pada:
 - Output terminal menampilkan total quotes dan beberapa data contoh
 
 ## Hasil
-- Total quotes captured: 100  
-- Contoh data:
-```json
-{
-  "text": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
-  "author": "Albert Einstein",
-  "tags": ["change", "deep-thoughts", "thinking", "world"]
-}
+- Total quotes captured: 100
 
 # Level 4 — Day 4: Cleaning Extracted Data
 
