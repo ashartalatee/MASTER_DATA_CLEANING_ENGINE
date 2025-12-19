@@ -112,5 +112,65 @@ Pipeline ini **tidak crash** walau salah satu sumber data tidak tersedia.
 - Engine tetap jalan
 - Output tetap dihasilkan
 
+# Day 7 — Multi-Source Extraction (Web + API)
+
+## Tujuan
+Membangun **pipeline ekstraksi data dari MULTIPLE SOURCE**:
+- Web Scraping (dynamic/static)
+- Public API  
+dengan **struktur data seragam** dan **sistem tetap hidup walau salah satu source bermasalah**.
+
+Ini adalah transisi penting dari:
+> “script jalan”  
+> “system tetap jalan”
+
+---
+
+## Sumber Data
+1. **Web**
+   - Website quotes (dynamic content)
+   - Diekstrak menggunakan Playwright
+
+2. **API**
+   - Public API: `api.quotable.io`
+   - Diakses menggunakan `requests`
+
+---
+
+## Struktur Data (Unified Schema)
+
+Semua data, baik dari web maupun API, distandarkan ke format:
+
+| Field   | Description                  |
+|--------|------------------------------|
+| text   | Isi quote                    |
+| author | Nama author                  |
+| tags   | List tag terkait             |
+| source | Asal data (`web` / `api`)    |
+
+---
+
+## Flow Sistem
+
+1. Ambil data dari **web**
+2. Ambil data dari **API**
+3. Jika API gagal (SSL / timeout):
+   - Sistem **tidak berhenti**
+   - Tetap lanjut dengan data web
+4. Gabungkan semua data
+5. Simpan ke CSV
+
+---
+
+## Error Handling yang Diterapkan
+
+- `try / except` pada API request
+- Timeout request
+- SSL verification **dimatikan secara sadar** (`verify=False`)
+- Sistem tetap menghasilkan output walau API error
+
+ Muncul warning:
+
+
 
 
