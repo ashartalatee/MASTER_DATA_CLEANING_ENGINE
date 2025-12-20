@@ -1,0 +1,8 @@
+customer_id,name,email,phone,signup_date,purchase_total
+1,Andi,andigmail.com,0812-555-444,01/12/23,150000
+1,Andi,andigmail.com,0812-555-444,01/12/23,150000
+2,Budi,budi@@gmail.com,0813 222 1111,2023-11-05,230000
+3,,unknown@,08-777-888-999,2023/01/03,175000
+4,Citra,citra@gmail,0812.333.2222,5 Jan 23,
+5,Dewi,dewi@gmail.com,0812-7777-8888,2023.10.11,200000
+6,Andi,andigmail.com,0812-555-444,01/12/23,150000

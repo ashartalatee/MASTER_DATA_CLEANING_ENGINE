@@ -1,0 +1,5 @@
+ID,Name,Email,JoinDate,Amount,Phone
+1,Alice,alice@example.com,2023-01-02,100.0,62812111222
+2,Bob,bob@example,2023-02-03,200.0,62812345678
+3,Charlie,unknown@example.com,2023-03-02,0.0,62812999888
+4,Alice,alice@example.com,2023-01-02,100.0,62812111222

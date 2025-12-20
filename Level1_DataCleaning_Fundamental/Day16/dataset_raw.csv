@@ -1,0 +1,7 @@
+ID,CustomerName,Email,Phone,SignupDate,TotalSpend
+101,Jane Doe,jane.doe@exampl.com,0812 333 222,2023-01-03,500
+102,Michael,michael@example.com,628123456789,03/01/23,700
+103,,wrongemail.com,0812-444-333,2023/01/03,
+104,Linda Chan,linda@example.com,8123456789,2023-01-04,450
+105,Jane Doe,jane.doe@example.com,812333222,2023-01-03,500
+106,Tom Brady,tom@@example.com,0812-111-222,04-01-2023,abc

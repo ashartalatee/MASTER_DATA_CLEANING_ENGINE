@@ -1,0 +1,8 @@
+Customer_ID,Name,Signup_Date,Last_Purchase,Revenue,
+101,John Doe,01/12/23,2023-12-05,1000,
+102,Jane Smith,12-05-2023,05/12/23,1500,
+103,Ali Ahmad,2023/11/30,30 Nov 2023,2000,
+104,Maria Garcia,11/25/23,2023.11.28,1750,
+105,Chen Li,2023.12.01,12/02/25,2023,1200
+106,Kumar Raj,NA,2023/12/05,900,
+107,Sofia Rossi,2023-12-03,NA,1100,

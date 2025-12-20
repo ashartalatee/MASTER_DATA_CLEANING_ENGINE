@@ -1,0 +1,8 @@
+{
+    "fill_string": "unknown",
+    "fill_numeric": 0,
+    "date_format": "%Y-%m-%d",
+    "supported_extensions": [".csv", ".xls", ".xlsx", ".tsv"],
+    "output_prefix": "cleaned_",
+    "log_file": "logs/cleaning_engine.log"
+}

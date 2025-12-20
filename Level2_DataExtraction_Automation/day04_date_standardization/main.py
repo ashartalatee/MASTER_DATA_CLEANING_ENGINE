@@ -1,0 +1,29 @@
+import pandas as pd
+from cleaning_functions import rename_columns, handle_missing_values, convert_numeric, standardize_date
+import os
+
+input_folder = "data_input"
+output_folder = "data_output"
+os.makedirs(output_folder, exist_ok=True)
+
+for file_name in os.listdir(input_folder):
+    if file_name.endswith(".csv"):
+        file_path = os.path.join(input_folder, file_name)
+        df = pd.read_csv(file_path)
+        
+        # 1. Rename kolom
+        df = rename_columns(df)
+        
+        # 2. Handle missing values
+        df = handle_missing_values(df, strategy="fill", fill_value=0)
+        
+        # 3. Convert numeric
+        df = convert_numeric(df)
+        
+        # 4. Standardize date
+        df = standardize_date(df)
+        
+        # Simpan hasil
+        output_path = os.path.join(output_folder, file_name)
+        df.to_csv(output_path, index=False)
+        print(f"Processed: {file_name}")
