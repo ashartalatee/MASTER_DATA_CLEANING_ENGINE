@@ -202,3 +202,35 @@ Mencegah **silent error** akibat tipe data salah.
 
 > DAY 6 adalah hari engine belajar **tidak percaya data**.
 
+## DAY 7 — Validator: Range & Logic (FINAL)
+
+### Tujuan Hari Ini
+Mencegah data yang **secara teknis valid tetapi tidak masuk akal secara logika**.
+
+### Yang Sudah Bisa
+- Engine bisa menolak nilai mustahil (negative amount, future date, dll)
+- Bisa membedakan:
+  - valid secara tipe
+  - valid secara makna
+- Engine tidak lagi “percaya buta” pada angka
+
+### Yang Dikerjakan
+- Menambahkan validasi range (min / max)
+- Menambahkan validasi logika (future date tidak boleh)
+- Menghentikan pipeline jika nilai melanggar akal sehat
+
+### Kenapa Harus Begini?
+- Data salah lebih berbahaya dari data kosong
+- Angka valid tapi salah bisa merusak keputusan bisnis
+- Validator bertugas menjaga **makna data**, bukan tampilannya
+
+### Posisi DAY 7 di Engine
+Urutan validasi WAJIB:
+1. Required columns
+2. Data type
+3. Range & logic
+4. Baru masuk cleaning
+
+Jika urutan dibalik → engine tidak jujur.
+
+> DAY 7 adalah hari engine belajar **berpikir waras**.

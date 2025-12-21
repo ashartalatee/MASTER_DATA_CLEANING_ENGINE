@@ -10,3 +10,11 @@ schema:
     date: date
     price: numeric
     category: text
+
+range_rules:
+  amount:
+    min: 0
+  quantity:
+    min: 1
+  order_date:
+    not_future: true

@@ -1,5 +1,5 @@
 import pandas as pd
-
+from datetime import datetime
 class DataValidationError(Exception):
     """Error fatal untuk data yang tidak valid."""
     pass
@@ -9,6 +9,7 @@ class DataValidator:
         self.df = df
         self.rules = rules
 
+        # Day 5 Required Columns
     def validate_required_columns(self):
         required_columns = self.rules.get("required_columns", [])
         missing_columns = [
@@ -22,17 +23,18 @@ class DataValidator:
         
         return True
     
+    # Day 6 Data Type Validation
     def validate_data_types(self):
         type_rules = self.rules.get("data_types", {})
         errors = []
 
         for column, expected_type in type_rules.items():
             if column not in self.df.columns:
-                continue # sudahditangani di requered_columns
+                continue # sudah ditangani di requered_columns
 
             series = self.df[column]
 
-            if expected_type == "init":
+            if expected_type == "int":
                 if not pd.api.types.is_integer_dtype(series):
                     errors.append(f"{column} should be int")
 
@@ -53,3 +55,40 @@ class DataValidator:
                   "Data type validation failed: " + "; ".join(errors)
              )
         return True
+    
+    # Day 7 Range & Logic Validation
+    def validate_range_and_logic(self):
+         range_rules = self.rules.get("range_rules", {})
+         errors = []
+
+         for column, rule in range_rules.items():
+              if column not in self.df.columns:
+                   continue
+              
+              series = self.df[column]
+
+              if "min" in rule:
+                   if (series < rule["min"]).any():
+                        errors.append(
+                             f"{column} has values below minimum {rule['min']}"
+                        )
+            
+              if "max" in rule:
+                   if (series > rule["max"]).any():
+                        errors.append(
+                             f"{column} has values above maximum {rule['max']}"
+                        )
+
+              if rule.get("not_future"):
+                   today = pd. Timestamp(datetime.today().date())
+                   if (series > today).any():
+                        errors.append(
+                             f"{column} contains future dates"
+                        )
+
+              if errors:
+                   raise DataValidationError(
+                        "Range & logic validation failed: " + "; ".join(errors)
+                   )
+              
+              return True
