@@ -179,3 +179,26 @@ Mencegah data rusak **masuk ke engine sejak awal**.
 - Data salah **lebih berbahaya** dari data kosong
 
 > DAY 5 adalah titik engine mulai punya **wibawa**.
+
+## DAY 6 — Validator: Data Type
+
+### Tujuan Hari Ini
+Mencegah **silent error** akibat tipe data salah.
+
+### Yang Sudah Bisa
+- Engine bisa mendeteksi data yang “kelihatan benar tapi salah”
+- Bisa memisahkan tugas validator vs cleaner
+- Tidak lagi percaya data mentah
+
+### Yang Dikerjakan
+- Menambahkan validasi tipe data berbasis schema
+- Menolak dataset dengan tipe tidak sesuai
+- Menghentikan pipeline sebelum data berbohong
+
+### Kenapa Harus Begini?
+- Error diam-diam lebih berbahaya dari error keras
+- Analisis salah tapi tidak sadar = bencana bisnis
+- Validator harus galak, cleaner baru ramah
+
+> DAY 6 adalah hari engine belajar **tidak percaya data**.
+
