@@ -18,3 +18,13 @@ range_rules:
     min: 1
   order_date:
     not_future: true
+
+missing_value_strategy:
+  amount:
+    strategy: median
+  quantity:
+    strategy: drop
+  order_date:
+    strategy: drop
+  custumer_id:
+    strategy: drop

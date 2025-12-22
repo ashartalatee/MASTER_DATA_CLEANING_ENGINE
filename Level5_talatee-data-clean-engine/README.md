@@ -234,3 +234,25 @@ Urutan validasi WAJIB:
 Jika urutan dibalik → engine tidak jujur.
 
 > DAY 7 adalah hari engine belajar **berpikir waras**.
+
+## DAY 8 — Missing Value Strategy
+
+### Tujuan Hari Ini
+Menangani data kosong **secara sadar dan terkontrol**.
+
+### Yang Sudah Bisa
+- Engine bisa membedakan NaN yang boleh hidup vs harus mati
+- Tidak lagi menyamaratakan missing value
+- Cleaning berbasis aturan, bukan insting
+
+### Yang Dikerjakan
+- Menentukan strategi missing value per kolom
+- Mengisi, membuang, atau mempertahankan data sesuai makna
+- Menjaga integritas data setelah validasi
+
+### Kenapa Harus Begini?
+- NaN adalah sinyal, bukan error
+- Salah isi lebih berbahaya dari tidak isi
+- Data bisnis butuh keputusan sadar, bukan tebakan
+
+> DAY 8 adalah hari engine belajar **menghormati kekosongan**.
