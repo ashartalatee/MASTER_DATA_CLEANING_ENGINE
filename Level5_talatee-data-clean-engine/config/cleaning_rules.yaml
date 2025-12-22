@@ -39,3 +39,17 @@ outlier_rules:
     method: iqr
     factor: 1.5
     action: cap
+
+text_standardization:
+  city:
+    lowercase: true
+    strip: true
+
+  payment_status:
+    lowercase: true
+    mapping:
+      paid: paid
+      completed: paid
+      success: paid
+      unpaid: unpaid
+      pending: unpaid

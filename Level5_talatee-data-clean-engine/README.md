@@ -300,3 +300,26 @@ Menangani nilai ekstrem **tanpa merusak makna bisnis**.
 - Engine profesional harus adil
 
 > DAY 10 adalah hari engine belajar **tidak gegabah**.
+
+## DAY 11 — Text Standardization
+
+### Tujuan Hari Ini
+Menyatukan makna teks tanpa mengubah arti bisnis.
+
+### Yang Sudah Bisa
+- Engine bisa menyatukan variasi teks yang sama maknanya
+- Tidak lagi ada kategori palsu
+- Konsistensi data terjaga
+
+### Yang Dikerjakan
+- Normalisasi teks (lowercase, strip)
+- Mapping nilai eksplisit berbasis aturan
+- Memisahkan format logic ke formatter module
+
+### Kenapa Harus Begini?
+- Analisis rusak karena teks tidak konsisten
+- Cantik tidak penting, konsisten wajib
+- Formatter menjaga tampilan, bukan logika
+
+> DAY 11 adalah hari engine belajar **berbicara satu bahasa**.
+
