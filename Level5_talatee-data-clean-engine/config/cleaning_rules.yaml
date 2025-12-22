@@ -28,3 +28,8 @@ missing_value_strategy:
     strategy: drop
   custumer_id:
     strategy: drop
+
+duplicate_rules:
+  subset:
+    - order_id
+  keep: first

@@ -256,3 +256,25 @@ Menangani data kosong **secara sadar dan terkontrol**.
 - Data bisnis butuh keputusan sadar, bukan tebakan
 
 > DAY 8 adalah hari engine belajar **menghormati kekosongan**.
+
+## DAY 9 — Duplicate Logic
+
+### Tujuan Hari Ini
+Menentukan apa arti **kejadian yang sama** dalam data.
+
+### Yang Sudah Bisa
+- Engine tidak lagi naif terhadap duplicate
+- Duplicate ditentukan oleh aturan bisnis
+- Data unik dijaga secara sadar
+
+### Yang Dikerjakan
+- Mendefinisikan subset kolom penentu duplicate
+- Menghapus duplicate berdasarkan makna, bukan baris
+- Menjaga konsistensi data transaksi
+
+### Kenapa Harus Begini?
+- Duplicate ≠ baris identik
+- Kesalahan duplicate bisa menggandakan nilai bisnis
+- Engine harus tahu apa yang dianggap satu kejadian
+
+> DAY 9 adalah hari engine belajar **memahami identitas data**.

@@ -131,3 +131,16 @@ class DataCleaner:
                 self.df[column] = self.df[column].fillna(value)
 
         return self.df
+
+# Day 9 - Duplicate Logic
+def handle_duplicates(self):
+     duplicate_rules = self.rules.get("duplicate_rules", {})
+     subset = duplicate_rules.get("subset")
+     keep = duplicate_rules.get("keep", "first")
+
+     if subset:
+          self.df = self.df.drop_duplicates(
+               subset=subset,
+          )
+
+     return self.df
