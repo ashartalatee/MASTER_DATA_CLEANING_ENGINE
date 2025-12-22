@@ -33,3 +33,9 @@ duplicate_rules:
   subset:
     - order_id
   keep: first
+
+outlier_rules:
+  amount:
+    method: iqr
+    factor: 1.5
+    action: cap

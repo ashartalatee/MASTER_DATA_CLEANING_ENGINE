@@ -144,3 +144,38 @@ def handle_duplicates(self):
           )
 
      return self.df
+
+# Day 10 - Outlier Handling
+def handle_outliers(self):
+     outlier_rules = self.rules.get("outlier_rules", {})
+
+     for column, rule in outlier_rules.items():
+          if column not in self.df.columns:
+               continue
+          
+          if rule.get("method") != "iqr":
+               continue
+          
+          q1 = self.df[column].quantile(0.25)
+          q3 = self.df[column].quantile(0.75)
+          iqr = q3 - q1
+          factor = rule.get("factor", 1.5)
+
+          lower_bound = q1 - factor * iqr
+          upper_bound = q3 + factor * iqr
+
+          action = rule.get("action", "none")
+
+          if action == "drop":
+               self.df = self.df[
+                    (self.df[column] >= lower_bound) &
+                    (self.df[column] <= upper_bound)
+               ]
+
+          elif action == "cap":
+               self.df[column] = self.df[column].clip(
+                    lower=lower_bound,
+                    upper=upper_bound
+               )
+
+     return self.df

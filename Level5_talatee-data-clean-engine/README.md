@@ -278,3 +278,25 @@ Menentukan apa arti **kejadian yang sama** dalam data.
 - Engine harus tahu apa yang dianggap satu kejadian
 
 > DAY 9 adalah hari engine belajar **memahami identitas data**.
+
+## DAY 10 — Outlier Handling
+
+### Tujuan Hari Ini
+Menangani nilai ekstrem **tanpa merusak makna bisnis**.
+
+### Yang Sudah Bisa
+- Engine bisa mendeteksi outlier berbasis statistik
+- Bisa memilih buang atau potong nilai ekstrem
+- Tidak lagi menyapu bersih data besar
+
+### Yang Dikerjakan
+- Implementasi outlier handling dengan metode IQR
+- Aksi outlier ditentukan lewat rule
+- Menjaga keseimbangan antara kebersihan dan makna data
+
+### Kenapa Harus Begini?
+- Outlier kadang kesalahan, kadang peluang
+- Membersihkan tanpa aturan = bias
+- Engine profesional harus adil
+
+> DAY 10 adalah hari engine belajar **tidak gegabah**.
