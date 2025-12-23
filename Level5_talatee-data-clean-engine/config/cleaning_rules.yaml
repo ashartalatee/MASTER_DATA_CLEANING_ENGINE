@@ -53,3 +53,12 @@ text_standardization:
       success: paid
       unpaid: unpaid
       pending: unpaid
+
+date_standardization:
+  order_date:
+    format: "%Y-%m-%d"
+    errors: "raise"
+
+  created_at:
+    format: "%Y/%m/%d %H:%M:%S"
+    errors: "coerce"

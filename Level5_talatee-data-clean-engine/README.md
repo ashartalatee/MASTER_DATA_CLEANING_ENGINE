@@ -323,3 +323,24 @@ Menyatukan makna teks tanpa mengubah arti bisnis.
 
 > DAY 11 adalah hari engine belajar **berbicara satu bahasa**.
 
+## DAY 12 — Date Standardization
+
+### Tujuan Hari Ini
+Menyeragamkan semua tanggal ke satu realita waktu.
+
+### Yang Sudah Bisa
+- Semua tanggal diparse ke datetime
+- Format tanggal konsisten
+- Error parsing bisa dikontrol lewat rule
+
+### Yang Dikerjakan
+- Parsing tanggal dengan pandas
+- Handling error (raise / coerce)
+- Formatting output tanggal
+
+### Kenapa Harus Begini?
+- Analisis waktu sangat sensitif
+- Kesalahan tanggal = insight palsu
+- Standarisasi mencegah bug laten
+
+> DAY 12 memastikan engine memahami waktu dengan benar.
