@@ -344,3 +344,47 @@ Menyeragamkan semua tanggal ke satu realita waktu.
 - Standarisasi mencegah bug laten
 
 > DAY 12 memastikan engine memahami waktu dengan benar.
+
+## DAY 13 — Numeric & Currency Standardization
+
+### Tujuan Hari Ini
+Membersihkan dan menstandarkan semua angka agar siap dihitung.
+
+### Yang Sudah Bisa
+- Menghapus simbol mata uang & persen
+- Menangani separator lokal
+- Konversi aman ke int / float
+
+### Yang Dikerjakan
+- Numeric parsing berbasis rule
+- Normalisasi persen
+- Error handling eksplisit
+
+### Kenapa Harus Begini?
+- Angka adalah fondasi analisis bisnis
+- String numeric menyebabkan silent bug
+- Rule-based cleaning membuat engine stabil
+
+> DAY 13 memastikan semua perhitungan berbasis angka valid.
+
+## DAY 14 — Formatter Module Separation
+
+### Tujuan Hari Ini
+Memisahkan logic formatting agar engine bersih dan scalable.
+
+### Yang Sudah Bisa
+- Text, date, dan number formatter terpisah
+- Cleaner hanya sebagai orkestrator
+- Arsitektur siap ekspansi
+
+### Yang Dikerjakan
+- Refactor formatter ke module khusus
+- Menjaga Single Responsibility Principle
+- Menyederhanakan cleaner
+
+### Kenapa Harus Begini?
+- Engine besar tidak boleh monolitik
+- Format akan terus bertambah
+- Desain hari ini menentukan kemudahan Level 6+
+
+> DAY 14 membuat engine layak tumbuh.

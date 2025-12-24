@@ -62,3 +62,20 @@ date_standardization:
   created_at:
     format: "%Y/%m/%d %H:%M:%S"
     errors: "coerce"
+
+numeric_standardization:
+  price:
+    type: float
+    currency: "Rp"
+    thousand_separator: "."
+    decimal_separator: ","
+    errors: "raise"
+
+  quantity:
+    type: int
+    errors: "raise"
+
+  discount:
+    type: float
+    percent: true
+    errors: "coerce"
