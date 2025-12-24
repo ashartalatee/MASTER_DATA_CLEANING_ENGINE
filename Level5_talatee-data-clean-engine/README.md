@@ -410,3 +410,25 @@ Mengikat seluruh cleaning step menjadi satu mesin terkontrol.
 - Modularitas mencegah technical debt
 
 > DAY 15 menjadikan engine benar-benar hidup.
+
+## DAY 16 — Pipeline Flow (End-to-End)
+
+### Tujuan Hari Ini
+Menyatukan seluruh engine menjadi satu alur eksekusi utuh.
+
+### Yang Sudah Bisa
+- Menjalankan engine dari satu pintu masuk
+- Pipeline terstruktur & konsisten
+- Output data bersih siap dipakai
+
+### Yang Dikerjakan
+- Finalisasi DataCleaningPipeline
+- Integrasi validator & cleaner
+- Main entry point untuk eksekusi
+
+### Kenapa Harus Begini?
+- Engine tanpa pipeline hanyalah modul
+- Alur eksplisit mencegah bug tersembunyi
+- Pipeline memudahkan testing & scaling
+
+> DAY 16 menandai engine resmi bisa dipakai end-to-end.

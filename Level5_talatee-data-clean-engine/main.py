@@ -1,17 +1,21 @@
-from engine.validator import DataValidator, DataValidationError
 import pandas as pd
 import yaml
 
-df = pd.read_csv("data/raw/sample.csv")
+from engine.pipeline import DataCleaningPipeline
 
-with open("config/cleaning_rules.yaml") as f:
-    rules = yaml.safe_load(f)
+def load_rules(path="config/cleaning_rules.yaml"):
+    with open(path, "r") as f:
+        return yaml.safe_load(f)
 
-validator = DataValidator(df, rules)
+def main():
+    df = pd.read_csv("data/raw/sample.csv")
+    rules = load_rules()
 
-try:
-    validator.validate_required_columns()
-    validator.validate_data_types()
-    print(" Validation passed")
-except DataValidationError as e:
-    print(f" VALIDATION FAILED: {e}")
+    pipeline = DataCleaningPipeline(df, rules)
+    clean_df = pipeline.run()
+
+    clean_df.to_csv("data/clean/sample_clean.csv", index=False)
+    print(" Data cleaning pipeline finished successfully")
+
+if __name__ == "__main__":
+    main()
