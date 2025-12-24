@@ -79,3 +79,8 @@ numeric_standardization:
     type: float
     percent: true
     errors: "coerce"
+
+cleaning_steps:
+  missing: true
+  duplicate: true
+  outlier: true

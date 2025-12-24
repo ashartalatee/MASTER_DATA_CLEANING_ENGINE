@@ -388,3 +388,25 @@ Memisahkan logic formatting agar engine bersih dan scalable.
 - Desain hari ini menentukan kemudahan Level 6+
 
 > DAY 14 membuat engine layak tumbuh.
+
+## DAY 15 — Cleaning Core Logic
+
+### Tujuan Hari Ini
+Mengikat seluruh cleaning step menjadi satu mesin terkontrol.
+
+### Yang Sudah Bisa
+- Menjalankan cleaning step modular
+- Mengontrol langkah lewat rule
+- Cleaner sebagai orkestrator murni
+
+### Yang Dikerjakan
+- Integrasi cleaning_steps
+- Penentuan urutan cleaning eksplisit
+- Pemisahan logic dan kontrol
+
+### Kenapa Harus Begini?
+- Engine harus bisa dikonfigurasi
+- Urutan cleaning mempengaruhi hasil
+- Modularitas mencegah technical debt
+
+> DAY 15 menjadikan engine benar-benar hidup.
